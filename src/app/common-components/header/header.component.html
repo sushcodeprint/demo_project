@@ -1,0 +1,89 @@
+<div class="dashboard-header">
+  <nav class="navbar navbar-expand-lg">
+    <div
+      class="collapse navbar-collapse d-flex justify-content-between"
+      id="navbarSupportedContent"
+    >
+      <div class="cursor-pointer">
+        <a>
+          <img
+            src="assets/images/header_logo.png"
+            alt=""
+            style="width: 10rem"
+          />
+        </a>
+      </div>
+
+      <div class="d-flex">
+        <span class="title">Self-Report Dashboard</span>
+      </div>
+
+      <div class="d-flex">
+        <div class="class">
+          <ul class="navbar-nav ml-auto navbar-right-top">
+            <li class="nav-item dropdown nav-user">
+              <a
+                class="nav-link nav-user-img"
+                id="navbarDropdownMenuLink2"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                ><div class="userName">
+                  <span class="mr-2 text-white">EMP Id:123456789</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar-list-4"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-list-4">
+            <ul class="navbar-nav">
+              <li class="nav-item userImage dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="{{ ProfileUrl }}"
+                    width="30"
+                    height="30"
+                    class="rounded-circle"
+                  />
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item cursor-pointer">
+                    <i class="fas fa fa-home"></i> Dashboard</a
+                  >
+
+                  <a class="dropdown-item cursor-pointer">
+                    <i class="fas fa fa-sign-out"></i> Log Out</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

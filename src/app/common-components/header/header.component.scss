@@ -1,0 +1,27 @@
+.userName {
+  display: contents;
+  font-weight: 700;
+}
+
+nav {
+  background: #2a1f76;
+  color: #f9f9f9;
+}
+
+.dropdown-menu {
+  margin-left: -7rem;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.userImage {
+  background-color: white;
+  border-radius: 2rem;
+}
+.tabs {
+  margin-right: 1rem;
+  text-decoration: none;
+}
+.tab {
+  text-decoration: none;
+}

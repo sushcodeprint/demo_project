@@ -1,0 +1,43 @@
+<div class="page-wrapper main toggled">
+  <nav id="sidebar" class="sidebar-wrapper custom-scroll-bar">
+    <div class="sidebar-content">
+      <div class="sidebar-menu">
+        <ul>
+          <li class="header-menu">
+            <span>General</span>
+          </li>
+          <li class="active">
+            <a
+              [routerLink]="['/attendence']"
+              routerLinkActive="router-link-active"
+              class="sidebar-item"
+            >
+              <i class="fas fa fa-home"></i>
+              <span class="menu-items">Dashboard</span>
+            </a>
+          </li>
+          <li class="header-menu">
+            <span>Essential</span>
+          </li>
+          <li class="sidebar-dropdown">
+            <a
+              [routerLink]="['/attendence']"
+              routerLinkActive="router-link-active"
+              class="cursor-pointer"
+            >
+              <i class="fa fa-shopping-cart"></i>
+              <span class="menu-items">Attendence</span>
+              <span class="badge badge-pill badge-warning">New</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- sidebar-menu  -->
+    </div>
+    <!-- sidebar-content  -->
+  </nav>
+  <!-- sidebar-wrapper  -->
+
+  <!-- page-content" -->
+</div>
+<!-- page-wrapper -->
