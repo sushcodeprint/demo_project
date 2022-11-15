@@ -1,0 +1,37 @@
+.leftside-menu {
+  width: 13rem;
+  z-index: 10;
+  bottom: 0;
+  top: 0;
+  z-index: 11;
+  background: #9590b6;
+}
+
+.leftside-menu.sidebar-collapsed {
+  width: 5rem;
+  transition: width 0.5s;
+}
+
+.sidebar-menu {
+  color: #aaa;
+}
+
+.sidebar-menu:hover {
+  color: var(--maroon);
+  background-color: #dfe6e9;
+}
+
+.sidebar-menu.router-link-active {
+  color: var(--maroon);
+  background-color: #dfe6e9;
+}
+.sidebar-sticky.dashboard-active-span.active {
+  background: #fefaf7;
+
+  font-weight: 600;
+  font-family: "Avant Garde Demi BT";
+  transition: 0.3s all;
+}
+.sidebar-collapsed .dashboard-submenu{
+  display: none !important;
+}

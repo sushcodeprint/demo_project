@@ -1,5 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-// regular style toast
+
 @import "~ngx-toastr/toastr";
 :root {
   --main-color: #ee9c6a;
@@ -88,26 +87,9 @@
   width: 0px;
   background-color: #f5f5f5;
 }
-//table
-.dataTables_wrapper .dataTables_paginate .paginate_button.current,
-.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-  color: #fff !important;
-  border: 1px solid #621961 !important;
-  background-color: #621961;
-  border-radius: 2rem;
-}
 
-.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-  color: white !important;
-  border: 1px solid #621961 !important;
-  background-color: #d6e8ee !important;
-  background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    rgb(111, 60, 153) 100%
-  ) !important;
-  border-radius: 2rem;
-}
+
+
 #example_filter input {
   box-shadow: 2px 10px 20px rgb(0 0 0 / 10%);
   border-radius: 10px;

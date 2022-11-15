@@ -4,18 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-// initial component loaded list..
+
 import { AppComponent } from './app.component';
-import { ResetPasswordComponent } from './common-components/reset-password/reset-password.component';
-// import { HeaderComponent } from './common-components/header/header.component';
+
 import { RouterModule } from '@angular/router';
 import { HttpErrorInterceptorInterceptor } from './common-services/http-error-interceptor.interceptor';
-// extra module for initial compoents
+
 import { ToastrModule } from 'ngx-toastr';
-import { AttendenceComponent } from './components/attendence/attendence.component';
+import { AttendenceSheetComponent } from './components/attendence-sheet/attendence-sheet.component';
+import { SideMenuComponent } from './components/side-menu/side-menu.component';
+
 
 @NgModule({
-  declarations: [AppComponent, ResetPasswordComponent, AttendenceComponent],
+  declarations: [AppComponent,AttendenceSheetComponent ],
 
   imports: [
     BrowserModule,
@@ -26,6 +27,7 @@ import { AttendenceComponent } from './components/attendence/attendence.componen
     ReactiveFormsModule,
     HttpClientModule,
     ToastrModule.forRoot(),
+    RouterModule
   ],
   providers: [
     {

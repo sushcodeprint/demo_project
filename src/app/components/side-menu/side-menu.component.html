@@ -1,0 +1,46 @@
+<div
+  class="leftside-menu  position-fixed custom-scroll-bar mt-5"
+  id="sidebar"
+>
+  <div
+    class="d-flex align-items-center justify-content-center pt-3 mb-3"
+    (click)="collapseSide()"
+  >
+  <div>
+
+      <div class="cursor-pointer be-fulfilled" *ngIf="!isLeftMenu">
+        <img
+          src="assets/images/header_logo.png"
+          style="width: 10rem; height: 3rem"
+        />
+      </div>
+  
+      <div class="cursor-pointer" *ngIf="isLeftMenu">
+        <img src="assets/images/bar-icon.png" class="p-2" style="width: 3rem" />
+      </div>
+  </div>
+  </div>
+
+  <div class="sidebar-sticky sidebar w-100" id="sidebar">
+    <div
+      [routerLink]="['/dashboard']"
+      routerLinkActive="router-link-active"
+      class="cursor-pointer d-flex align-items-center px-4 py-3 dashboard-active-span"
+    >
+    <i class="fas fa fa-home"></i>
+    <span class="menu-items ml-3 dashboard-submenu">Dashboard</span>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div
+      [routerLink]="['/attendence']"
+      routerLinkActive="router-link-active"
+      class="cursor-pointer d-flex align-items-center px-4 py-3 dashboard-active-span."
+      >
+      <i class="fa fa-shopping-cart"></i>
+      <span class="menu-items ml-3 dashboard-submenu">Attendence</span>
+        
+      </div>
+    </div>
+ </div>
+</div>

@@ -1,13 +1,7 @@
-/*
-    creating navigation in this file 
-    also added lazy loading concept 
-    below with loadchildren properties
-*/
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-import { PageNotFoundComponent } from './common-components/page-not-found/page-not-found.component';
-import { AttendenceComponent } from './components/attendence/attendence.component';
+import { AttendenceSheetComponent } from './components/attendence-sheet/attendence-sheet.component';
 import { HomeComponent } from './components/dashboard/home/home.component';
 
 const routes: Routes = [
@@ -27,12 +21,11 @@ const routes: Routes = [
           ),
       }, // dashboard redirect..
 
-      { path: 'attendence', component: AttendenceComponent },
+      { path: 'attendence', component: AttendenceSheetComponent },
     ],
   },
 
-  // Wildcard route if url doesnt match with routes..
-  { path: '**', component: PageNotFoundComponent },
+
 ];
 
 @NgModule({

@@ -3,11 +3,11 @@ import { DataServiceService } from 'src/app/common-services/data-service.service
 declare const $: any;
 
 @Component({
-  selector: 'app-attendence',
-  templateUrl: './attendence.component.html',
-  styleUrls: ['./attendence.component.scss'],
+  selector: 'app-attendence-sheet',
+  templateUrl: './attendence-sheet.component.html',
+  styleUrls: ['./attendence-sheet.component.scss']
 })
-export class AttendenceComponent implements OnInit {
+export class AttendenceSheetComponent implements OnInit {
   constructor(private attendenceData: DataServiceService) {}
   filterAttendenceList = this.attendenceData.attendenceList;
 
@@ -88,3 +88,5 @@ export class AttendenceComponent implements OnInit {
     });
   }
 }
+
+
